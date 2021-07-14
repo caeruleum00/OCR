@@ -70,7 +70,8 @@ Train과 Test를 7: 3으로 나눠 train으로 22장(판본 7장, 필사본 15�
 초기 가중치는 darknet53.conv.74를 사용했으며 cfg파일은 yolov3.cfg파일을 기반으로 하였다.   
 성능 향상을 위해 width와 height를 608로 증가시켰고, class가 한 개이므로 max_batches를 기존 500200에서 2200으로 낮춰주었다. 이에 따라 steps 역시 1600, 1800으로 수정해주었다.   
 [yolo] 부분의 classes를 1, filters를 18로 수정해서 학습을 진행했다.   
-[ 정리 ]  
+<br>
+<b>[ 정리 ]</b>  
 초기 가중치: darknet53.conv.74    
 cfg: yolov3.cfg   
 구분            |  변경 전   |  변경 후
@@ -79,5 +80,5 @@ width, height | 416 | 608
 max_batches | 500200 | 4200
 steps | 400000, 450000 | 3200, 2600  
 
-[yolo]의 classes = 80 → 2, [yolo] 바로 위의 [convolutional]의 filter=255 → 21
-*ctrl+f로 [yolo]를 검색하면 세 개가 검색되는데 세 부분 모두 변경해줘야함.
+[yolo]의 classes = 80 → 2, [yolo] 바로 위의 [convolutional]의 filter=255 → 21  
+*ctrl+f로 [yolo]를 검색하면 세 개가 검색되는데 세 부분 모두 변경해줘야함.*
