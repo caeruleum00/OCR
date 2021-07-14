@@ -73,7 +73,7 @@ Train과 Test를 7: 3으로 나눠 train으로 22장(판본 7장, 필사본 15�
 <b>[ 정리 ]</b>  
 초기 가중치: darknet53.conv.74    
 cfg: yolov3.cfg   
-구분            |  변경 전   |  변경 후
+구분   |  변경 전  |  변경 후
 :-------------------------:|:-------------------------:|:-------------------------:
 width, height | 416 | 608  
 max_batches | 500200 | 4200
@@ -88,11 +88,18 @@ max_batches = 2200             |  max_batches = 4200
 <img src="https://user-images.githubusercontent.com/49026215/125578608-d8a673c5-caeb-4139-abf6-27e7f55f0170.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578610-7f8ca87b-54a0-47ed-9a7b-bc50cbce493f.png"  width="300" height="300">
 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
+
+<br>
+### 3-4. Test 결과
+class_id = 0 (word, 판본)의 ap = 29.23%  
+class_id = 1 (word_hw, 필사본)의 ap = 92.83%  
+precision |  recall  |  F1-score | Average IoU | mAP@0.50 | Total Detection Time
+:------------:|:------------:|:------------:|:------------:|:------------:|
+0.94 | 0.41 | 0.57 | 77.14% | 61.03% | 1s
 
 
-![7](https://user-images.githubusercontent.com/49026215/125578608-d8a673c5-caeb-4139-abf6-27e7f55f0170.png)
-![8](https://user-images.githubusercontent.com/49026215/125578610-7f8ca87b-54a0-47ed-9a7b-bc50cbce493f.png)
+
 ![9](https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png)
 ![10](https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg)
 ![11](https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg)
