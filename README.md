@@ -39,8 +39,8 @@
 
 구분            |  Network   |   결과   |    결과
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Detection | CenterNet | <img src="https://user-images.githubusercontent.com/49026215/125577334-614270ad-04b9-4c0f-abbe-8c33c0bf6743.png"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125577342-f731ca5f-6660-4077-a167-33f47ceeea1c.png"  width="300" height="400"> 
-Classification | CNN | <img src="https://user-images.githubusercontent.com/49026215/125577345-85b6b93c-2e4b-48c9-9267-b8b5019e6a37.png"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125577346-4ff87df1-5ff4-4006-90a1-6d80cf588ac8.png"  width="300" height="400">
+Detection | CenterNet | <img src="https://user-images.githubusercontent.com/49026215/125577334-614270ad-04b9-4c0f-abbe-8c33c0bf6743.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577342-f731ca5f-6660-4077-a167-33f47ceeea1c.png"  width="200" height="300"> 
+Classification | CNN | <img src="https://user-images.githubusercontent.com/49026215/125577345-85b6b93c-2e4b-48c9-9267-b8b5019e6a37.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577346-4ff87df1-5ff4-4006-90a1-6d80cf588ac8.png"  width="200" height="300">
 
 < Table2. 고서 한자 데이터에 대한 base model 성능 > <br>
 
