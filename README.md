@@ -42,7 +42,7 @@
 Detection | CenterNet | <img src="https://user-images.githubusercontent.com/49026215/125577334-614270ad-04b9-4c0f-abbe-8c33c0bf6743.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577342-f731ca5f-6660-4077-a167-33f47ceeea1c.png"  width="200" height="300"> 
 Classification | CNN | <img src="https://user-images.githubusercontent.com/49026215/125577345-85b6b93c-2e4b-48c9-9267-b8b5019e6a37.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577346-4ff87df1-5ff4-4006-90a1-6d80cf588ac8.png"  width="200" height="300">
 
-< Table2. 고서 한자 데이터에 대한 base model 성능 > <br>
+<p align = "center">< Table2. 고서 한자 데이터에 대한 base model 성능 ></p> <br>
 
 CenterNet을 이용한 detection의 경우 mAP가 0.736으로 나쁘지 않은 성능을 보여줬다.   
 classification은 비슷한 문자가 별로 없거나 단순한 획으로 구성된 경우에는 잘 구별하였지만 *< Table2 >* 의 왼쪽 아래 그림과 같이 뒷면에 비치는 글자까지 포함하여 인식하는 경우가 발생했다.   
@@ -81,4 +81,25 @@ max_batches | 500200 | 4200
 steps | 400000, 450000 | 3200, 2600  
 
 [yolo]의 classes = 80 → 2, [yolo] 바로 위의 [convolutional]의 filter=255 → 21  
-*ctrl+f로 [yolo]를 검색하면 세 개가 검색되는데 세 부분 모두 변경해줘야함.*
+*ctrl+f로 [yolo]를 검색하면 세 개가 검색되는데 세 부분 모두 변경해줘야함.*  
+
+
+max_batches = 2200             |  max_batches = 4200
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/49026215/125578608-d8a673c5-caeb-4139-abf6-27e7f55f0170.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578610-7f8ca87b-54a0-47ed-9a7b-bc50cbce493f.png"  width="300" height="300">
+
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
+
+
+![7](https://user-images.githubusercontent.com/49026215/125578608-d8a673c5-caeb-4139-abf6-27e7f55f0170.png)
+![8](https://user-images.githubusercontent.com/49026215/125578610-7f8ca87b-54a0-47ed-9a7b-bc50cbce493f.png)
+![9](https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png)
+![10](https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg)
+![11](https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg)
+![12](https://user-images.githubusercontent.com/49026215/125578753-03f7bf2b-01a9-4e85-a954-4133defe9e35.png)
+![13](https://user-images.githubusercontent.com/49026215/125578759-98340e9b-b25a-4168-8363-134a15f2dd49.png)
+
+
+
+
