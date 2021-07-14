@@ -13,15 +13,11 @@
 옛한글의 경우 현재 가지고 있는 데이터 양이 적고 annotation이 되어있지 않아 옛한글과 비슷한 고서 한자 데이터(AIHub)를 이용하여 우선적으로 실험을 진행했다.<br> 
 실험과 옛한글 labeling을 병렬적으로 진행하며 고서 한자 데이터에 대한 성능을 확인하고 이를 옛한글에 적용하는 방법으로 모델링 하였다.<br>
 - 고서 한자 데이터: 해서체 이미지 1,456장, 행서체 49,918장 <br>
-- 한글 데이터: 판본 이미지 10장, 필사본 이미지 47장<br>
+- 옛한글 데이터: 판본 이미지 10장, 필사본 이미지 47장<br>
 
-<div>
-<img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400" align="left">
-<img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400" align="left">
-</div>
-<br><br>
-<고서 한자 데이터와 옛한글 데이터 비교> 
 
-Solarized dark             |  Solarized Ocean
+고서 한자 데이터             |  옛한글 데이터
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400">
+<고서 한자 데이터와 옛한글 데이터 비교> <br>
+
