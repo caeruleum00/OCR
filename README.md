@@ -87,8 +87,7 @@ max_batches = 2200             |  max_batches = 4200
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/49026215/125578608-d8a673c5-caeb-4139-abf6-27e7f55f0170.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578610-7f8ca87b-54a0-47ed-9a7b-bc50cbce493f.png"  width="300" height="300">
 
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
 
 <br>
 
@@ -98,7 +97,8 @@ class_id = 1 (word_hw, 필사본)의 ap = 92.83%
 precision |  recall  |  F1-score | Average IoU | mAP@0.50 | Total Detection Time
 :------------:|:------------:|:------------:|:------------:|:------------: |:------------:
 0.94 | 0.41 | 0.57 | 77.14% | 61.03% | 1s
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp< Table3. 판본과 필사본 일부 데이터 학습 성능(YOLOv3)  >
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Table3. 판본과 필사본 일부 데이터 학습 성능(YOLOv3)  >
 
 <br>
 판본 |  필사본  |  필사본 
