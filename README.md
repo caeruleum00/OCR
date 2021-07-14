@@ -19,7 +19,7 @@
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400">
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Table1. 고서 한자 데이터와 옛한글 데이터 비교> <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Table1. 고서 한자 데이터와 옛한글 데이터 비교> <br>
 
 ### 2-1. Kaggle Kuzushiji Recognition
 ‘Kaggle kuzushiji recognition’은 일본 고대 문자인 kuzushiji가 표기된 이미지에서 문자를 찾아 분류하는 모델을 구축하는 대회로 해당 과제와 유사하다고 생각되어 대회에서 우수한 성능을 낸 코드를 위주로 살펴보았다. </n>
