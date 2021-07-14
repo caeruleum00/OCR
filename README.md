@@ -106,6 +106,16 @@ precision |  recall  |  F1-score | Average IoU | mAP@0.50 | Total Detection Time
 <img src="https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg"  width="300" height="300"> 
 8오륜행실도 | 26새 신부가 시아버지에게 보낸 안부 편지 | 44어떤 여인이 숙주라는 여인에게 보낸 편지
 
+
+판본            |  필사본   |   필사본   
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg"  width="300" height="300">
+8오륜행실도 | 26새 신부가 시아버지에게 보낸 안부 편지  | 44어떤 여인이 숙주라는 여인에게 보낸 편지
+
+
+
+
+
 ![9](https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png)
 ![10](https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg)
 ![11](https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg)
