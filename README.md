@@ -15,4 +15,4 @@
  옛한글 데이터: 판본 이미지 10장, 필사본 이미지 47장<br>
 <br>
 
-<img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="500" height="700">
+<img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="500">
