@@ -26,10 +26,10 @@
 ‘Kaggle kuzushiji recognition’은 일본 고대 문자인 kuzushiji가 표기된 이미지에서 문자를 찾아 분류하는 모델을 구축하는 대회로 해당 과제와 유사하다고 생각되어 대회에서 우수한 성능을 낸 코드를 위주로 살펴보았다. </n>
 그 중 대회에서 ‘score 0.934’를 기록한 K_mat의 base code 흐름을 참고하였으며, base code는 다음과 같이 두 단계로 구성되었다.</n>
 
-1) Detection Model  
-모든 문자의 class를 0으로 라벨링하여 글자가 있는 부분을 detection하도록 학습시켰으며 network는 CenterNet을 사용하였다.  
-2) Classification Model  
-input image annotation의 좌표 값을 이용하여 문자별로 crop image를 저장하고 crop된 이미지를 활용하여 CNN으로 학습시켰다.  
+ 1) Detection Model  
+ 모든 문자의 class를 0으로 라벨링하여 글자가 있는 부분을 detection하도록 학습시켰으며 network는 CenterNet을 사용하였다.  
+ 2) Classification Model  
+ input image annotation의 좌표 값을 이용하여 문자별로 crop image를 저장하고 crop된 이미지를 활용하여 CNN으로 학습시켰다.  
 <br>
 우리는 기존과 같이 모델을 detection과 classification으로 나눠 두 가지로 구축하는 방법과 detection과 classification을 한 번에 할 수 있는 Large class detection에 대한 방법도 추가로 고민해봤다.   
 <br>
