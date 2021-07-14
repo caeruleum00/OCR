@@ -22,3 +22,29 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<고서 한자 데이터와 옛한글 데이터 비교> <br>
 
+### 2-1. Kaggle Kuzushiji Recognition
+‘Kaggle kuzushiji recognition’은 일본 고대 문자인 kuzushiji가 표기된 이미지에서 문자를 찾아 분류하는 모델을 구축하는 대회로 해당 과제와 유사하다고 생각되어 대회에서 우수한 성능을 낸 코드를 위주로 살펴보았다. </n>
+그 중 대회에서 ‘score 0.934’를 기록한 K_mat의 base code 흐름을 참고하였으며, base code는 다음과 같이 두 단계로 구성되었다.</n>
+
+1) Detection Model  
+모든 문자의 class를 0으로 라벨링하여 글자가 있는 부분을 detection하도록 학습시켰으며 network는 CenterNet을 사용하였다.  
+2) Classification Model  
+input image annotation의 좌표 값을 이용하여 문자별로 crop image를 저장하고 crop된 이미지를 활용하여 CNN으로 학습시켰다.  
+<br>
+우리는 기존과 같이 모델을 detection과 classification으로 나눠 두 가지로 구축하는 방법과 detection과 classification을 한 번에 할 수 있는 Large class detection에 대한 방법도 추가로 고민해봤다.   
+<br>
+
+### 2-2. 고서 한자 데이터에 base model 적용
+고서 한자 데이터에 대한 base model의 성능을 알아보기 위한 실험을 진행했다.  
+
+
+
+< Table2. 고서 한자 데이터에 대한 base model 성능 >
+CenterNet을 이용한 detection의 경우 mAP가 0.736으로 나쁘지 않은 성능을 보여줬다.   
+classification은 비슷한 문자가 별로 없거나 단순한 획으로 구성된 경우에는 잘 구별하였지만 < Table2 > 의 왼쪽 아래 그림과 같이 뒷면에 비치는 글자까지 포함하여 인식하는 경우가 발생했다.   
+즉, 우리는 다음과 같은 3가지 부분에서 개선점을 발견하였다.  
+1. detection model의 성능 향상을 위해 CenterNet대신 YOLO를 사용   
+2. classification model의 성능 향상을 위해 CNN대신 ResNet 등 일반적으로 더 높은 성능을 보이는 network를 사용  
+3. 이미지 전면의 글자를 강조하는 image Preprocessing 및 augmentation 진행  
+ 
+실험을 통해 찾은 개선 사항을 반영하여 우선적으로 라벨링이 완료된 판본과 필사본의 일부를 이용하여 모델을 구현하였다.  
