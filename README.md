@@ -101,11 +101,6 @@ precision |  recall  |  F1-score | Average IoU | mAP@0.50 | Total Detection Time
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Table3. 판본과 필사본 일부 데이터 학습 성능(YOLOv3)  >
 
 <br>
-판본 |  필사본  |  필사본 
-:------------:|:------------:|:------------:
-<img src="https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg"  width="300" height="300"> 
-8오륜행실도 | 26새 신부가 시아버지에게 보낸 안부 편지 | 44어떤 여인이 숙주라는 여인에게 보낸 편지
-
 
 판본            |  필사본   |   필사본   
 :-------------------------:|:-------------------------:|:-------------------------:|
@@ -113,15 +108,23 @@ precision |  recall  |  F1-score | Average IoU | mAP@0.50 | Total Detection Time
 8오륜행실도 | 26새 신부가 시아버지에게 보낸 안부 편지  | 44어떤 여인이 숙주라는 여인에게 보낸 편지
 
 
+필사본은 Train과 Test 데이터의 글자 크기가 거의 일정하였고 그 결과 ap가 92.83%로 아주 좋은 성능을 보였다.  
+<br>
+YOLOv3를 사용하여 옛한글 데이터에 대한 학습을 진행한 결과 데이터 양이 적었음에도 불구하고 우수한 성능을 보였다.  
+YOLO가 detection에서 우수한 성능을 보인 만큼 classification모델을 따로 만들지 않고 YOLO 자체로 Large class detection을 할 수 있는 방법에 대해 알아보았다.   
 
 
+## 4. Detection model을 사용하여 Large Class Detection (YOLO9000)  
+고서 한자 데이터를 이용해 YOLOv3 자체를 그대로 사용하여 detection과 classification을 동시에 시도할 경우 out of memory 문제가 발생하였다. (행서 데이터의 class 갯수: 5911개)   
+옛한글은 지금의 한글보다 자모음의 조합이 훨씬 많기 때문에 한자 데이터와 비슷한 수준정도로 많은 class가 생성될 것이고 이를 현재 YOLOv3로 해결하기에는 무리가 있다고 판단하였다.  
+이에 따라 large class detection에 대한 연구 사례 research를 진행한 결과 YOLO9000 모델과 이 모델을 현재 우리 데이터에 접목시킬 수 있는 가능성에 대해 살펴보았다.   
+YOLO9000은 large class에 대한 Hierarchincal tree인 WordTree를 구성하여 detection과 classification을 joint training하는 방법을 제안한다.   
+논문에서는 COCO dataset과 ImageNet을 결합하여 9418개의 클래스를 지닌 WordTree를 생성하였다.    
+YOLO9000의 성능은 19.7mAP로 다소 떨어지는 것을 확인할 수 있다.    
+WordTree를 구성하여 detection과 classification의 loss를 따로 계산하는 등 다양한 시도를 하였지만 역시나 클래스가 많아짐에 따라 성능이 낮아진 것으로 보인다.   
 
-![9](https://user-images.githubusercontent.com/49026215/125579173-85219fbd-07d8-4d24-8dbd-6cec85abc180.png)
-![10](https://user-images.githubusercontent.com/49026215/125578734-f1de0996-d7f5-4bf0-828e-c4fdb537651d.jpg)
-![11](https://user-images.githubusercontent.com/49026215/125578746-7229de6e-fbae-4e24-bcc3-066d01a549dc.jpg)
-![12](https://user-images.githubusercontent.com/49026215/125578753-03f7bf2b-01a9-4e85-a954-4133defe9e35.png)
-![13](https://user-images.githubusercontent.com/49026215/125578759-98340e9b-b25a-4168-8363-134a15f2dd49.png)
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/49026215/125578753-03f7bf2b-01a9-4e85-a954-4133defe9e35.png"  width="300" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125578759-98340e9b-b25a-4168-8363-134a15f2dd49.png"  width="300" height="300"> 
 
-
-
+우리가 YOLO9000을 벤치마킹할 경우 학습에 사용되는 문자에 대해 WordTree를 구성하는 작업이 필요한데 이때 무엇을 기준으로 상위와 하위 범주를 구분할 것인지에 대한 고민이 필요하다. 또한 논문에 나온 YOLO9000의 성능을 보았을 때 class가 많은 옛한글 데이터에 대한 classification 성능 역시 좋지 못할 것으로 예상된다.
 
