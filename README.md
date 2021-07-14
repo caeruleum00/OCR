@@ -37,13 +37,15 @@
 ### 2-2. 고서 한자 데이터에 base model 적용
 고서 한자 데이터에 대한 base model의 성능을 알아보기 위한 실험을 진행했다.  
 
-구분            |  Network   |   결과 |  결과
+구분            |  Network   |   결과   |    결과
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400"> | 
+Detection | CenterNet | <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400"> 
+Classification | CNN |
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> |
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400">
 
-< Table2. 고서 한자 데이터에 대한 base model 성능 >
+< Table2. 고서 한자 데이터에 대한 base model 성능 > <br>
+
 CenterNet을 이용한 detection의 경우 mAP가 0.736으로 나쁘지 않은 성능을 보여줬다.   
 classification은 비슷한 문자가 별로 없거나 단순한 획으로 구성된 경우에는 잘 구별하였지만 < Table2 > 의 왼쪽 아래 그림과 같이 뒷면에 비치는 글자까지 포함하여 인식하는 경우가 발생했다.   
 즉, 우리는 다음과 같은 3가지 부분에서 개선점을 발견하였다.  
