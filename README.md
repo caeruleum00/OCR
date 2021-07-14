@@ -3,13 +3,16 @@
 <br><br>
 
 ## Quick Guide
- 환경
+<b>환경(Environment)</b>
+ ```
  Ubuntu 18.04
  cuda 10.1
  cudnn 7.6.5
- openCV 
+ ```
 1. Git clone darknet(AlexeyAB)
+ '''
  https://github.com/AlexeyAB/darknet.git
+ '''
 
 2. 
 
