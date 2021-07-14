@@ -15,10 +15,10 @@
 - 고서 한자 데이터: 해서체 이미지 1,456장, 행서체 49,918장 <br>
 - 옛한글 데이터: 판본 이미지 10장, 필사본 이미지 47장<br>
 
-
+<div align="center">
 고서 한자 데이터             |  옛한글 데이터
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400">
-
+</div>
 <p align="center"><고서 한자 데이터와 옛한글 데이터 비교></p> <br>
 
