@@ -20,5 +20,5 @@
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/49026215/125572438-7e3b2df2-e3ac-434e-bc90-915ee2406f4e.jpg"  width="300" height="400"> | <img src="https://user-images.githubusercontent.com/49026215/125573883-b94031ec-0e7a-4a07-87f5-23dac7443cb0.jpg"  width="300" height="400">
 
-<&nbsp;><&nbsp;><&nbsp><&nbsp><&nbsp> <고서 한자 데이터와 옛한글 데이터 비교> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<고서 한자 데이터와 옛한글 데이터 비교> <br>
 
