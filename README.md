@@ -91,6 +91,7 @@ max_batches = 2200             |  max_batches = 4200
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp< Image1. 옛한글 학습 chart (max_batches = 좌: 2200, 우: 4200)  >
 
 <br>
+
 ### 3-4. Test 결과
 class_id = 0 (word, 판본)의 ap = 29.23%  
 class_id = 1 (word_hw, 필사본)의 ap = 92.83%  
