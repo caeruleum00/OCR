@@ -41,7 +41,7 @@
 Detection | CenterNet | <img src="https://user-images.githubusercontent.com/49026215/125577334-614270ad-04b9-4c0f-abbe-8c33c0bf6743.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577342-f731ca5f-6660-4077-a167-33f47ceeea1c.png"  width="200" height="300"> 
 Classification | CNN | <img src="https://user-images.githubusercontent.com/49026215/125577345-85b6b93c-2e4b-48c9-9267-b8b5019e6a37.png"  width="200" height="300"> | <img src="https://user-images.githubusercontent.com/49026215/125577346-4ff87df1-5ff4-4006-90a1-6d80cf588ac8.png"  width="200" height="300">
 
-<p align = "center">< Table2. 고서 한자 데이터에 대한 base model 성능 ></p> <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;< Table2. 고서 한자 데이터에 대한 base model 성능 > <br>
 
 CenterNet을 이용한 detection의 경우 mAP가 0.736으로 나쁘지 않은 성능을 보여줬다.   
 classification은 비슷한 문자가 별로 없거나 단순한 획으로 구성된 경우에는 잘 구별하였지만 *< Table2 >* 의 왼쪽 아래 그림과 같이 뒷면에 비치는 글자까지 포함하여 인식하는 경우가 발생했다.   
