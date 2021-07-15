@@ -26,13 +26,17 @@ make
 
 3. custom 폴더 생성
 위의 파일들을 다운로드 받고 custom 폴더에 'custom.data', 'custom.names', 'custom_yolov3.cfg', 'custom_yolov3_test.cfg'파일 넣기
+<br>
 
 4. weights
 backup 폴더에 custom_yolov3_best.weights 넣기
+<br>
 
-5. data
-
+5. 실행
+```
 ./darknet detector test custom/custom.data custom/custom_yolov3_test.cfg backup/custom_yolov3_best.weights
+Enter Image: 
+```
 
 
 ## 1. Introduction
