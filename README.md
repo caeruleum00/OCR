@@ -25,7 +25,8 @@ make
 ```
 
 3. custom 폴더 생성
-위의 파일들을 다운로드 받고 custom 폴더에 'custom.data', 'custom.names', 'custom_yolov3.cfg', 'custom_yolov3_test.cfg'파일 넣기
+파일들을 다운로드 받고 custom 폴더를 생성  
+custom 폴더에 'custom.data', 'custom.names', 'custom_yolov3.cfg', 'custom_yolov3_test.cfg'파일 넣기
 <br>
 
 4. weights
