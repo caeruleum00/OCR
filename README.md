@@ -8,13 +8,32 @@
  Ubuntu 18.04
  cuda 10.1
  cudnn 7.6.5
+ opencv
  ```
 1. Git clone darknet(AlexeyAB)
- '''
- https://github.com/AlexeyAB/darknet.git
- '''
+ ```
+ git clone https://github.com/AlexeyAB/darknet.git
+ ```
 
-2. 
+2. darknet 실행
+```
+cd darknet
+```
+Makefile 수정: GPU = 1, CUDNN = 1, OPENCV=1
+```
+make
+```
+
+3. custom 폴더 생성
+위의 파일들을 다운로드 받고 custom 폴더에 'custom.data', 'custom.names', 'custom_yolov3.cfg', 'custom_yolov3_test.cfg'파일 넣기
+
+4. weights
+backup 폴더에 custom_yolov3_best.weights 넣기
+
+5. data
+
+./darknet detector test custom/custom.data custom/custom_yolov3_test.cfg backup/custom_yolov3_best.weights
+
 
 ## 1. Introduction
 ‘OCR’ 이란 ‘Optimal Character Recognition’ 의 줄임말로, 광학 문자 인식 기술이라고도 불린다.<br> 
